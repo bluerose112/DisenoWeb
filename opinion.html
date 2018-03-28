@@ -5,10 +5,10 @@
     <title>indice</title>
     <style>
       body {
-        width: 80%;    
+        width: 100%;    
         margin: 0 auto;
         font: 10pt/1.5em Helvetica,"Helvetica neue", Arial, sans-serif;   
-        background: #eee9df url() center top repeat;
+        background: #eee9df url(../images/tile1.png) center top repeat;
       }
       h1 {
         font: 18pt Helvetica,"Helvetica neue", Arial, sans-serif;    
@@ -23,20 +23,21 @@
       }
       body > header > h1 {
         float:left;
-        width: 75%;
+        width: 100%;
         font: 32pt Helvetica,"Helvetica neue", Arial, sans-serif;    
         text-align: center;
       }
       body > header > picture {
         float:left;
-        width: 20%;
+        width: 100%;
       }
       body > header > picture > img {
         width: 100%;
       }
+
       body > section {	
         float: right;
-        width: 70%;	
+        width: 90%;	
         padding-left: 20px;
         margin: 0 0 20px 0px;	
         border-left: 2px dotted #b2a497;
@@ -86,27 +87,32 @@
         width: 100%;
       }
 </style> </head>
-  <body>
-    <nav style="height: 39px;"> <a href="nosotros.html">Nosotros</a> <a href="nuestrosServicio.html">Nuestros
-        Servicios</a> <a href="index.html">Atrás</a> </nav>
+  <body><a href="nosotros.html">Nosotros</a> <a href="nuestrosServicio.html">Nuestros
+      Servicios</a> <a href="index.html">Atrás</a>
     <section>
       <header>
-        <h1>Tu Opinión CUENTA</h1>
+        <h1>TU OPINIÓN CUENTA</h1>
       </header>
       <article>
         <h3>Rellena con sinceridad</h3>
-        <form method="get" "="" enctype="text/plain">
+        <form method="get" action="https://rawgit.com/cancerbero01/disenoWeb/master/ejerciciosTema3/reOpinion.html"
+
+          enctype="text/plain">
           <fieldset> <legend>Tus datos de contacto</legend>
             <!-- Título del conjunto de campos -->
             <div> <label for="apellidos">¿Cuál es tu nombre?</label> <input name="nombre"
+
                 id="nombre" type="text"> </div>
             <div> <label for="apellidos">¿Cuál es tu dirección de correo
                 electrónico?</label> <input name="email" id="email" type="email"></div>
             <div> <label for="edad">Indica la edad</label> <input name="edad"
+
                 id="edad" type="number"></div>
-            <div> <label for="edad2">Indica la edad</label> <input name="edad2"
-                id="edad2" type="range"></div>
+            <div> <label for="edad2">Indica la edad</label> <input
+
+                name="edad2" id="edad2" type="range"></div>
             <div> <label for="telefono">Indica teléfono</label> <input name="telefono"
+
                 id="telefono" type="tel"></div>
           </fieldset>
           <fieldset> <legend>Elije tu envío</legend>
@@ -114,12 +120,15 @@
             <div>
               <p>¿Qué deseas que te envíe?</p>
               <p> <input name="deseo" value="rico" id="rico" type="radio"> <label
+
                   for="rico">Ser rico</label><br>
                 <input name="deseo" value="famoso" id="famoso" type="radio"> <label
+
                   for="famoso">Ser famoso</label><br>
                 <input name="deseo" value="inteligente" id="inteligente" type="radio">
                 <label for="inteligente">Ser aún más inteligente</label><br>
                 <input name="deseo" value="otro" id="otro" type="radio"> <label
+
                   for="otro">Otro...</label><br>
               </p>
             </div>
@@ -127,8 +136,10 @@
               <p>¿Otra cosa?</p>
               <p> <input name="Belleza" id="Belleza" type="checkbox"> <label for="Belleza">Belleza</label><br>
                 <input name="Habilidad" id="Habilidad" type="checkbox"> <label
+
                   for="Habilidad">Habilidad</label><br>
                 <input name="Personalidad" id="Personalidad" type="checkbox"> <label
+
                   for="Personalidad">Personalidad</label><br>
               </p>
             </div>
@@ -150,9 +161,8 @@
               <textarea name="specs" id="specs" cols="40" rows="4"></textarea> </div>
           </fieldset>
           <input name="_next" value="" type="hidden"> <input
+
 value="Enviar" type="submit"> </form>
       </article>
-    </section>
-    <footer> </footer>
   </body>
 </html>
